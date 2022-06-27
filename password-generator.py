@@ -26,6 +26,9 @@ while True:
         password = input('Digite sua Senha: ')
         p = sample(password, len(password))
         s = ''.join(p)
+        while s == password:
+            p = sample(password, len(password))
+            s = ''.join(p)
         sleep(0.5)
         print(f'Nova Senha: {s}')
         break
@@ -34,10 +37,8 @@ while True:
         b = list()
         numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
         simbols = ['@', '#', '$', '&', '*', '(', ')', '-', '_', '+', '=', '^', '~', ':', '.']
-        letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-                   'u', 'v', 'w', 'x', 'y', 'z']
-        LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-                   'U', 'V', 'W', 'X', 'Y', 'Z']
+        letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
         print('Responda com [S] ou [N], por favor.')
         sleep(1)
         z = 0
