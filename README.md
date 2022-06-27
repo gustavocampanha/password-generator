@@ -11,8 +11,5 @@ Download and extract the contents from the compressed folder, or clone the repos
 git clone https://github.com/gustavocampanha/password_generator.git
 ```
 
-## Requirements
-Install the libraries present in the "requirements.txt" file to run the code perfectly
-
 ## License
 [Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
